@@ -6,7 +6,7 @@ using namespace node;
 
 Nan::Persistent<Function> CardReader::constructor;
 
-void CardReader::init(Handle<Object> target) {
+void CardReader::init(Local<Object> target) {
 
      // Prepare constructor template
     Local<FunctionTemplate> tpl = Nan::New<FunctionTemplate>(New);
